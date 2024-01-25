@@ -230,7 +230,7 @@ function App() {
       updateBalances()
       if (transactionHash){
         toast.success("Successfully sent transaction");
-        toast.success(`Check Transaction Hash: https://gnosisscan.io/address/${transactionHash}}`)
+        toast.success(`Check Transaction Hash: ${transactionHash}`)
 
       }
     
@@ -318,11 +318,11 @@ const truncateAddress = (address, prefixLength = 6, suffixLength = 4) => {
   return (
     <div>
       <h1 className="title">
-        <a target="_blank" href="https://web3auth.io/docs/sdk/pnp/web/modal" rel="noreferrer">
+        <a target="_blank" href="https://docs.safe.global/safe-core-aa-sdk/auth-kit/reference" rel="noreferrer">
           Safe Account Abstraction{'  '}
         </a>
         on{'  '}
-        <a target="_blank" href="https://docs.safe.global/safe-core-aa-sdk/auth-kit/reference" rel="noreferrer">
+        <a target="_blank" href="https://docs.gnosischain.com/" rel="noreferrer">
           Gnosis Chain
         </a>{' '}
         Demo
@@ -330,10 +330,10 @@ const truncateAddress = (address, prefixLength = 6, suffixLength = 4) => {
       <ToastContainer />
       {isAuthenticated ? loggedInContent : unloggedInContent}
       <div className="footer">
-        <p> Made on Gnosis Chain by Vanshika {' '}
+        <p className="plain-text"> Made on Gnosis Chain by Vanshika {' '}
           <p>
             <a
-              href="https://github.com/Web3Auth/web3auth-pnp-examples/tree/main/web-modal-sdk/account-abstraction/web3auth-safe-example"
+              href="https://github.com/vanshika-srivastava/safe-gnosis-chain"
               target="_blank"
               rel="noopener noreferrer"
             >
