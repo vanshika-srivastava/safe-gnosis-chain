@@ -1,0 +1,91 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 0.9em;
+  width: 29%;
+  margin-bottom:2em;
+
+}
+
+.upper-container {
+ display:flex;
+ justify-content: space-around;
+ align-items:center;
+
+
+}
+
+.bar{
+  background-color:#212b23;
+  margin-top:3em;
+  padding:0.5em 0.5em;
+  border-radius:50px;
+  width:70em;
+  height:2.5em;
+  margin-bottom:10em;
+}
+
+
+.read-the-docs {
+  color: #888;
+}
+
+.waving-hand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+  15% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+  30% { transform: rotate(-8.0deg) }
+  40% { transform: rotate(14.0deg) }
+  50% { transform: rotate(-4.0deg) }
+  60% { transform: rotate(10.0deg) }
+  70% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+ 100% { transform: rotate( 0.0deg) }
+}
+
+.grid{
+  margin-bottom:3em;
+}
+
+.footer{
+  margin-top:7em;
+}
